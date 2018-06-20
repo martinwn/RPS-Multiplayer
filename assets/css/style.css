@@ -1,0 +1,26 @@
+.text-centered {
+    text-align: center;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+#player-1-container {
+    height: 300px;
+    width: 300px;
+    border: solid 1px black;
+}
+
+#game-container {
+    height: 300px;
+    width: 300px;
+    border: solid 1px black;
+}
+
+#player-2-container {
+    height: 300px;
+    width: 300px;
+    border: solid 1px black;
+}
