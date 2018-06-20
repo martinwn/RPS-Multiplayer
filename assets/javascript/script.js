@@ -181,9 +181,6 @@
       if (player1Choice === player2Choice) {
         var comparisonTie = $("<p id='tie'>").text("Tie Game");
         $("#game-container").append(comparisonTie);
-        database.ref().update({
-          turn:1
-        })
       }
       if (player1Choice === "rock" & player2Choice === "paper") {
         var comparison2 = $("<p id='comparison-2'>").text(player2Name + " wins!")
