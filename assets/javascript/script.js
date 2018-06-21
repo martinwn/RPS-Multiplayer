@@ -31,7 +31,9 @@
   
     event.preventDefault();
 
-    if (clickCount === 0) {
+    if (clickCount > 1) {
+      clickCount = 0;
+    } else if (clickCount === 0) {
       
       player1Name = $("#name-input").val().trim();
 
@@ -222,7 +224,14 @@
   })
   console.log(player1Choice);
   console.log(player2Choice);
+  $("#clear").on("click", function() {
+    
+    database.ref().set({});
+    $("#game-container").child.remove();
+    $("#choice-container").remove();
+    location.reload();
 
+  })
 
   
 
